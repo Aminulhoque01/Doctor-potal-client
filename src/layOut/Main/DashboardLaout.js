@@ -15,10 +15,16 @@ const DashboardLaout = () => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="dashboard-brawer" className="drawer-overlay"></label>
-                    <ul className="menu p-4 w-80 bg-base-100 text-base-content">
+                    <ul className="menu p-4 w-80 text-base-content">
                      
                         <li><Link to='/dashboard'>My Appointments</Link></li>
-                        <li><Link to='/dashboard/users'>All users</Link></li>
+                        {
+                            <>
+                                <li><Link to='/dashboard/users'>All users</Link></li>
+                                <li><Link to='/dashboard/add_doctor'>Add Doctor</Link></li>
+                                <li><Link to='/dashboard/manage_doctor'>manage Doctor</Link></li>
+                            </>
+                        }
                        
                     </ul>
 

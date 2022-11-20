@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const AppoitnmentsOption = ({ option,setTreatment }) => {
-    const { name, slots } = option;
+    const { name,price, slots } = option;
 
     return (
         <div className="card">
@@ -10,6 +10,7 @@ const AppoitnmentsOption = ({ option,setTreatment }) => {
                 <h2 className="text-primary text-center text-2xl font-bold"> {name}</h2>
                 <p>{slots.length > 0 ? slots[0]:'try another'}</p>
                 <p>{slots.length }{slots.length > 1 ? 'spaces':'spaces'} Available</p>
+                <p><small>price:${price}</small></p>
                 <div className="card-actions justify-center">
                    
                     

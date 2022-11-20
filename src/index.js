@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'react-day-picker/dist/style.css';
 import AuthProvider from './contexts/AuthPovider/AuthProvider';
 import { QueryClient, QueryClientProvider,} from '@tanstack/react-query'
+import { Toaster } from 'react-hot-toast';
 
 const queryClient = new QueryClient();
 
@@ -15,6 +16,7 @@ root.render(
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
         <App />
+        <Toaster />
       </AuthProvider>
     </QueryClientProvider>
 
