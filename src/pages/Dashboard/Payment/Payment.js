@@ -11,10 +11,11 @@ const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PK);
 
 const Payment = () => {
     const bookings = useLoaderData();
-    const navigation = useNavigation();
-    if(navigation.state === "loading"){
-        return <Loading></Loading>
-    }
+    // const navigation = useNavigation();
+
+    // if(navigation.state === "loading"){
+    //     return <Loading></Loading>
+    // }
 
 
     return (

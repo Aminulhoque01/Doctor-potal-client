@@ -14,6 +14,7 @@ import Home from "../../pages/Home/Home/Home";
 import Login from "../../pages/Login/Login";
 import SignUp from "../../pages/SignUp/SignUp";
 import DisplayError from "../../sheard/DisplayError/DisplayError";
+import AdminRout from "../AdminRoutes/AdminRout";
 import PrivetRout from "../PrivetRoutes/PrivetRout";
 
 export const  router= createBrowserRouter([
@@ -54,15 +55,15 @@ export const  router= createBrowserRouter([
             },
             {
                 path:'/dashboard/users',
-                element:<AllUser></AllUser>,
+                element:<AdminRout><AllUser></AllUser></AdminRout>,
             },
             {
                 path:'/dashboard/add_doctor',
-                element:<AddDoctor></AddDoctor>,
+                element:<AdminRout><AddDoctor></AddDoctor></AdminRout>,
             },
             {
                 path:'/dashboard/manage_doctor',
-                element:<ManageDoctor></ManageDoctor>,
+                element:<AdminRout><ManageDoctor></ManageDoctor></AdminRout>,
             },
             {
                 path:'/dashboard/payment/:id',

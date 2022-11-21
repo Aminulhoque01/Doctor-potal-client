@@ -57,7 +57,7 @@ const ManageDoctor = () => {
     return (
         <div>
             <h2 className='text-3xl'>Manage Doctor</h2>
-            <div className="overflow-x-auto">
+            <div className=" grid  sm:grid-cols-12">
                 <table className="table w-full">
 
                     <thead>
